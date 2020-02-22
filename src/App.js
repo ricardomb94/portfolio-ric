@@ -1,13 +1,19 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Navbar from './component/Desk-Navigation/Navbar';
+import SideDrawer from './component/Mobile-nav/SideDrawer'
 
-function App() {
-  return (
-    <div className="App">
-      My App
-    </div>
-  );
+
+
+export default class App extends Component {
+  render() {
+    return (
+      <div style={{height:'100%'}}>
+        <Navbar />
+        <SideDrawer />
+        <main style={{marginTop:'64px'}}>
+          <p>My content will come here</p>
+        </main>
+      </div>
+    )
+  }
 }
-
-export default App;

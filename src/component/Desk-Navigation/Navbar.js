@@ -4,13 +4,16 @@ import ToggleButton from '../Mobile-nav/ToggleButton'
 import './Navbar.css';
 
 class  Navbar extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
         return (
             <header className="toolbar">
         
             <nav className="toolbar_nav">
                 <div className="toolbar_toggle-button">
-                <ToggleButton /> 
+                <ToggleButton click={this.props.drawerToggleClickHandler}/> 
                 </div>
                 <div className="toolbar_logo"><a href="/">Ricardo M'BOUKOU<br/>Développeur JavaScript</a></div>
                 <div className="spacer"></div>

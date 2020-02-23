@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import './Toggle-button.css'
 
-export default class ToggleButton extends Component {
-    render() {
-        return (
+
+    const toggleButton = props => (
             <div>
-                <button className="toggle-button">
+                <button className="toggle-button" onClick={props.click}>
                      <div className="toogle-button_line"/>
                      <div className="toogle-button_line"/>
                      <div className="toogle-button_line"/>
                  </button> 
             </div>
         )
-    }
-}
+   
 
 
+export default toggleButton;
 
 
 

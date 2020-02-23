@@ -3,17 +3,12 @@ import React, { Component } from 'react';
 import ToggleButton from '../Mobile-nav/ToggleButton'
 import './Navbar.css';
 
-class  Navbar extends Component {
-    constructor(props){
-        super(props)
-    }
-    render() {
-        return (
+const navbar = props =>(
             <header className="toolbar">
         
             <nav className="toolbar_nav">
                 <div className="toolbar_toggle-button">
-                <ToggleButton click={this.props.drawerToggleClickHandler}/> 
+                <ToggleButton click={props.drawerClickHandler}/> 
                 </div>
                 <div className="toolbar_logo"><a href="/">Ricardo M'BOUKOU<br/>Développeur JavaScript</a></div>
                 <div className="spacer"></div>
@@ -37,7 +32,7 @@ class  Navbar extends Component {
             </nav>
         </header>
         )
-    }
-}
+    
 
-export default Navbar;
+
+export default navbar;

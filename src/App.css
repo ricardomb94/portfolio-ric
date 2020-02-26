@@ -1,2 +1,9 @@
 
 
+.content{
+    height:100%;
+    width: 100%;
+    margin-top: 32rem;
+    background-image: url("../public/media/brad.jpg");
+    background: red;
+}

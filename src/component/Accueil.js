@@ -6,6 +6,7 @@ import React, { Component } from 'react'
         return (
             <div>
                 <h1>à propos</h1>
+                
             </div>
         )
     }

@@ -30,12 +30,12 @@ backdropClickHandler = () => {
     backdrop =  <Backdrop click={this.drawerToggleClickHandler}/>;
   }
     return (
-      <div style={{height:'100%'}}>
+      <div className="container" >
         <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
         {sideDrawer}
         {backdrop}
-        <main style={{marginTop:'64px'}}>
-          <p>My content will come here</p>
+        <main className="content">
+          The content
         </main>
       </div>
     );

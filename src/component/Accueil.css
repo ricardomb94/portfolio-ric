@@ -1,0 +1,27 @@
+
+
+.section{
+background: rgba(204, 37, 37, 0.8);
+
+}
+.text-content.accueil{
+    width: 40%;
+    padding: 2rem;
+    border: 0.2rem solid #C4C4C4;
+    border-radius: 0.5rem;
+    /* background:  rgb(59, 59, 231); */
+    background: #0C4363;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+.image-content{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #C4C4C4;
+    width: 40%;
+}
+
+.section1{
+    margin-top: 4rem;
+}
+

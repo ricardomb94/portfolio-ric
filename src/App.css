@@ -1,9 +1,27 @@
 
 
-.content{
-    height:100%;
-    width: 100%;
-    margin-top: 32rem;
-    background-image: url("../public/media/brad.jpg");
-    background: red;
+.container{
+/* text-align: center; */
+/* background: firebrick; */
+height: 100%;
+width: 100%;
+   
+}
+body{
+  background: url(/media/viggo-unsplash.jpg);
+  /* background: url(/media/brad.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  margin:0;
+  padding: 0;
+  width: 100vw;
+}
+#root{
+   width: 90%;
+   margin: 0 auto;
+}
+h2{
+   text-align: center;
+   font-family:'Courier New', Courier, monospace;
 }

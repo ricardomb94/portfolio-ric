@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+import './App.css'
 import Navbar from './component/Desk-Navigation/Navbar';
 import SideDrawer from './component/Mobile-nav/SideDrawer';
 import Backdrop from './component/Backdrop/Backdrop';
+import Accueil from './component/Accueil';
+import Technos from './component/Technos';
+import Projets from './component/Projets';
+import Contact from './component/Contact'
+import Footer from './Footer'
 
 
 
@@ -30,13 +36,15 @@ backdropClickHandler = () => {
     backdrop =  <Backdrop click={this.drawerToggleClickHandler}/>;
   }
     return (
-      <div className="container" >
+      <div className="container-fluid background-img" >
         <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
         {sideDrawer}
         {backdrop}
-        <main className="content">
-          The content
-        </main>
+        <Accueil />
+        <Technos />
+        <Projets />
+        <Contact />
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.section2{
+    display: flex;
+    background: khaki;
+}
+.stack{
+    padding: 2rem;
+}
+
+.tech-front{
+    background: darkgoldenrod;
+    order: 1;
+}
+.tech-back{
+    background: seagreen;
+    order: 2;
+}

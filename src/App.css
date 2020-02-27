@@ -1,25 +1,32 @@
 
 
-.container{
-/* text-align: center; */
-/* background: firebrick; */
-height: 100%;
-width: 100%;
-   
-}
+
 body{
   background: url(/media/viggo-unsplash.jpg);
-  /* background: url(/media/brad.jpg); */
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
-  margin:0;
   padding: 0;
+  
+  /* min-height: 50vh; */
   width: 100vw;
+  height: 100vh;
+  z-index: 3;
+ 
 }
-#root{
+/* #root{
    width: 90%;
    margin: 0 auto;
+   background: beige;
+   
+} */
+
+.container{
+   height: 100%;
+   width: 100%; 
+   margin-top: 8rem;   
 }
 h2{
    text-align: center;

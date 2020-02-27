@@ -36,10 +36,11 @@ backdropClickHandler = () => {
     backdrop =  <Backdrop click={this.drawerToggleClickHandler}/>;
   }
     return (
-      <div className="container-fluid background-img" >
+      <div className="container background-img" >
         <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
         {sideDrawer}
         {backdrop}
+        <h2>Qui suis-je</h2>
         <Accueil />
         <Technos />
         <Projets />

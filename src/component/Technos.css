@@ -1,16 +1,45 @@
 .section2{
-    display: flex;
-    background: khaki;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+    text-align: center;
 }
 .stack{
     padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+}
+.front{
+    grid-column-start:2;
+    background: darkgoldenrod;
+    width: 25rem;
+    
+}
+.front >div{
+    background: #e6324180;
+    padding: 1rem;
+}
+.front >div:nth-child(odd){
+    background: #eb232380;
+    padding: 1rem;
 }
 
-.tech-front{
-    background: darkgoldenrod;
-    order: 1;
+.item{
+    padding: 1rem;
 }
-.tech-back{
+
+
+.back{
+    grid-column-start: 3;
     background: seagreen;
-    order: 2;
+    width: 25rem;
+} 
+.back >div{
+    background: #0ac25080;
+    padding: 1rem;
+}
+.back >div:nth-child(odd){
+    background: #23ebaf80;
+    padding: 1rem;
 }

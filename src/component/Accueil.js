@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Pulse from 'react-reveal/Pulse';
-import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 import './Accueil.css';
 
 
@@ -9,7 +9,7 @@ import './Accueil.css';
     render() {
         return (
           <section className="section1 wrapper">
-          <Bounce left>
+          <Fade left cascade>
             <div className="text-content accueil">
             <h2>En bref</h2>
             <hr/>
@@ -18,7 +18,7 @@ import './Accueil.css';
             
             <div className="item-b"><p>What this will do is extend the first image across the entire row. You are telling the grid that the image will start at the first grid line and end at the third grid line. Here’s how it will look.</p></div> 
             </div>
-          </Bounce>
+          </Fade>
            
           <Pulse>
             <div className="image-content"><img src={`./media/blouson.jpg`} alt="myPic" /></div>

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import back from '../Fullstack/back';
+import front from '../Fullstack/front';
+import skills from '../Fullstack/skills';
 import './Technos.css'
+import { Item } from 'semantic-ui-react';
 
 const Title = "Technos";
 export class Technos extends Component {
@@ -10,25 +14,28 @@ export class Technos extends Component {
                 <h2>{Title}</h2>
                 <section className="section2">
                     <article className="stack front">
-                        <p>Technos Front-End</p>
-                        <div className="stack-1 item">HTML</div>
-                        <div className="stack-2 item">CSS</div>
-                        <div className="stack-3 item">JavaScript</div>
-                        <div className="stack-3 item">JQuery</div>
-                        <div className="stack-4 item">Reactjs</div>
-                        <div className="stack-4 item">Reactjs</div>
-                        <div className="stack-4 item">php</div>
+                        <h3>Technos Front-End</h3>{
+                         front.map((item, i) => 
+                           <div key={i}>
+                           <img src={`media/${item.img}`} alt={item.name} className="media"/>
+                           </div>
+                        )};
                     </article>
-                    
                     <article className="stack back">
-                        <p>Technos Back-End</p>
-                        <div className="stack-1 item">Nodejs</div>
-                        <div className="stack-2 item">Express</div>
-                        <div className="stack-3 item">Bodyparser</div>
-                        <div className="stack-3 item"></div>
-                        <div className="stack-4 item">php</div>
-                        <div className="stack-4 item">php</div>
-                        <div className="stack-4 item">php</div>
+                        <h3>Technos Back-End</h3>{
+                            back.map((item, i) => 
+                              <div key={i}>
+                              <img src={`media/${item.img}`} alt={item.name} className="media"/>
+                              </div>
+                           )};
+                    </article>
+                    <article className="stack front">
+                        <h3>Les Outils</h3>{
+                         skills.map((item, i) => 
+                           <div key={i}>
+                           <img src={`media/${item.img}`} alt={item.name} className="media"/>
+                           </div>
+                        )};
                     </article>
                 </section>
             </div>

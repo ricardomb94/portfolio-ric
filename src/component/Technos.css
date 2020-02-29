@@ -1,9 +1,9 @@
 .section2{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5em;
     text-align: center;
-    /* background:#e6324180; */
+    align-content: center;
 }
 .media{
     width:100%;
@@ -13,12 +13,12 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 0.4em;
+    grid-gap: 0.3em;
 }
 .front{
     grid-column-start:2;
     /* background: darkgoldenrod; */
-    width: 25rem;
+    width: 26rem;
     
 }
 .front >div{
@@ -37,6 +37,7 @@
 
 .back{
     grid-column-start: 3;
+    background: hsla(0, 71%, 51%, 0.7);
     /* background: hsla(0, 71%, 51%, 0.7); */
     width: 25rem;
 } 
@@ -47,6 +48,11 @@
 .back >div:nth-child(odd){
     background: transparent;
     /* padding: 1rem; */
+}
+.skills{
+    grid-column-start: 4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 h3{

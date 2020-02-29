@@ -3,7 +3,8 @@ import back from '../Fullstack/back';
 import front from '../Fullstack/front';
 import skills from '../Fullstack/skills';
 import './Technos.css'
-import { Item } from 'semantic-ui-react';
+import Zoom from 'react-reveal/Zoom';
+
 
 const Title = "Technos";
 export class Technos extends Component {
@@ -11,6 +12,7 @@ export class Technos extends Component {
     render() {
         return (
             <div>
+            <Zoom>
                 <h2>{Title}</h2>
                 <section className="section2">
                     <article className="stack front">
@@ -29,7 +31,7 @@ export class Technos extends Component {
                               </div>
                            )};
                     </article>
-                    <article className="stack front">
+                    <article className="stack front skills">
                         <h3>Les Outils</h3>{
                          skills.map((item, i) => 
                            <div key={i}>
@@ -38,9 +40,29 @@ export class Technos extends Component {
                         )};
                     </article>
                 </section>
+                </Zoom>
             </div>
         );
     }
 }
 
 export default Technos;
+
+
+
+
+{/*<section className="section1 wrapper">
+            
+              <h2>En bref</h2>{
+                  presentation.map((item, i) => 
+                      <div className="text-content" key={i}>
+                            {item.title}
+                      </div>      
+                )}
+                
+                  <img src={`/media${}`} />
+               
+              </section>*/}
+              
+              
+              {/*<div className="image-content"><img src={`./media/blouson.jpg`} alt="myPic" /></div>*/}

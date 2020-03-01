@@ -1,9 +1,11 @@
+
 .section2{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 0.5em;
+    /* width: 35rem;
     text-align: center;
-    align-content: center;
+    align-content: center; */
 }
 .media{
     width:100%;
@@ -12,23 +14,23 @@
     background:#3262e680;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(12,1fr);
     grid-gap: 0.3em;
 }
 .front{
-    grid-column-start:2;
+    grid-column-start:3;
     /* background: darkgoldenrod; */
-    width: 26rem;
+    /* width: 25rem; */
     
 }
 .front >div{
     background: rgba(250, 248, 248, 0.4);
     padding: 1rem;
 }
-.front >div:nth-child(odd){
-    /* background: #eb232380; */
+/* .front >div:nth-child(odd){
+  background: #eb232380; 
     padding: 1rem;
-}
+} */
 
 .item{
     padding: 1rem;
@@ -36,10 +38,11 @@
 
 
 .back{
-    grid-column-start: 3;
+    grid-column-start: 6;
     background: hsla(0, 71%, 51%, 0.7);
+    grid-template-columns: repeat(12,1fr);
     /* background: hsla(0, 71%, 51%, 0.7); */
-    width: 25rem;
+    /* width: 25rem; */
 } 
 .back >div{
     background:rgba(250, 248, 248, 0.4);
@@ -47,12 +50,12 @@
 }
 .back >div:nth-child(odd){
     background: transparent;
-    /* padding: 1rem; */
 }
 .skills{
-    grid-column-start: 4;
+    grid-column-start: 8;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(12,1fr);
+    /* width: 25rem; */
 }
 
 h3{

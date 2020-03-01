@@ -1,5 +1,8 @@
 const presentation = [
     {
+        img:"ric.jpg",
+    },
+    {
         id: 0,
         title: "What this will do is extend the first image across the entire row. You are telling the grid that the image will start at the first grid line and end at the third grid line. Here’s how it will look..",
       

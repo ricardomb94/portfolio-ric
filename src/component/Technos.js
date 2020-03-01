@@ -13,7 +13,7 @@ export class Technos extends Component {
         return (
             <div>
             <Zoom>
-                <h2>{Title}</h2>
+                
                 <section className="section2">
                     <article className="stack front">
                         <h3>Technos Front-End</h3>{

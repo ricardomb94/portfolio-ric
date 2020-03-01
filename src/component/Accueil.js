@@ -21,12 +21,12 @@ import './Accueil.css';
                     <hr/>
                      </div>
                      </Fade>
-                     <Fade right cascade duration={2000}>
+                     {/*<Fade right cascade duration={2000}>
                 
                     <div className="image-content">
                       <img src={`./media/blouson.jpg`} alt="myPic" />
                     </div>
-                    </Fade>
+              </Fade>*/}
           </section>
            
         )

@@ -4,6 +4,7 @@ import front from '../Fullstack/front';
 import skills from '../Fullstack/skills';
 import './Technos.css'
 import Zoom from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
 
 
 const Title = "Technos";
@@ -11,11 +12,10 @@ export class Technos extends Component {
     
     render() {
         return (
-            <div>
-            <Zoom>
-                
+            <div> 
                 <section className="section2">
-                    <article className="stack front">
+                <Zoom left cascade>
+                    <article className=" front stack ">
                         <h3>Technos Front-End</h3>{
                          front.map((item, i) => 
                            <div key={i}>
@@ -23,7 +23,9 @@ export class Technos extends Component {
                            </div>
                         )};
                     </article>
-                    <article className="stack back">
+                </Zoom>
+                <Bounce  right cascade>
+                    <article className="back stack">
                         <h3>Technos Back-End</h3>{
                             back.map((item, i) => 
                               <div key={i}>
@@ -31,7 +33,9 @@ export class Technos extends Component {
                               </div>
                            )};
                     </article>
-                    <article className="stack front skills">
+                </Bounce>    
+                <Zoom left cascade>
+                    <article className="front stack skills">
                         <h3>Les Outils</h3>{
                          skills.map((item, i) => 
                            <div key={i}>
@@ -39,8 +43,8 @@ export class Technos extends Component {
                            </div>
                         )};
                     </article>
-                </section>
                 </Zoom>
+                </section>
             </div>
         );
     }

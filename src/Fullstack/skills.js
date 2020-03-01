@@ -1,7 +1,7 @@
 
 const skills = [
     {name:"PhotoShop", img:"ps.png",},
-    {name:"Express", img:"figma.png",},
+    {name:"Postman", img:"postman.png",},
     {name:"MongoDB", img:"mongoDB.png",},
     {name:"MySQL", img:"mysql.png",},
     {name:"Figma", img:"figma.png",},

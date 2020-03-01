@@ -40,9 +40,9 @@ backdropClickHandler = () => {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
         {sideDrawer}
         {backdrop}
-            {/*<div className="image-cv">
+            <div className="image-cv">
               <img src={`./media/ric.jpg`} alt="myPic" />
-    </div>*/}
+            </div>
         <Accueil />
         <Technos />
         <Projets />

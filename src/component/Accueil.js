@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import presentation from './Identite/presentation'
 // import LightSpeed from 'react-reveal/LightSpeed';
 import Fade from 'react-reveal/Fade';
+// import Bounce from 'react-reveal/Bounce';
 import './Accueil.css';
 
 

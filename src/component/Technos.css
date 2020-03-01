@@ -1,10 +1,11 @@
 
 .section2{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr, 1fr, 1fr);
     grid-gap: 0.5em;
-    /* width: 35rem;
-    text-align: center;
+    grid-template-rows: 50rem;
+    /* width: 35rem; */
+    /* text-align: center;
     align-content: center; */
 }
 .media{
@@ -14,13 +15,15 @@
     background:#3262e680;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 0.3em;
 }
 .front{
-    grid-column-start:3;
+    grid-column-start:1;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
     /* background: darkgoldenrod; */
-    /* width: 25rem; */
+    /* width: 15rem; */
     
 }
 .front >div{
@@ -38,11 +41,13 @@
 
 
 .back{
-    grid-column-start: 6;
+    grid-column-start: 3;
+    grid-column: 3/8;
+    grid-template-columns: repeat(1, 1fr);
     background: hsla(0, 71%, 51%, 0.7);
-    grid-template-columns: repeat(12,1fr);
-    /* background: hsla(0, 71%, 51%, 0.7); */
-    /* width: 25rem; */
+    align-self: center;
+    border-radius: 5px;
+    width: 5.65rem;
 } 
 .back >div{
     background:rgba(250, 248, 248, 0.4);
@@ -52,10 +57,13 @@
     background: transparent;
 }
 .skills{
-    grid-column-start: 8;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    /* width: 25rem; */
+    grid-column-start: 9;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    text-align: center;
+    /* grid-template-columns: repeat(6,1fr); */
+    /* width: 15rem; */
 }
 
 h3{

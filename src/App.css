@@ -24,11 +24,11 @@ html, body{
    margin-top: 8rem;   
 }
 .image-cv img{
-   display: grid;
+   position: relative;
    display: flex;
    margin: 0 auto;
-   /* grid-template-columns: repeat(12,1fr);
-   grid-column: 5/6; */
+   top: 7.6rem;
+   z-index: 1;
    border-radius: 7.6875rem;
    background: red;
 }

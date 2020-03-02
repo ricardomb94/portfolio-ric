@@ -1,7 +1,7 @@
 
 
 html body{
-   display: grid;
+   /* display: grid; */
    /* grid-template-columns: repeat(12, 1fr); */
   background: url(/media/viggo-unsplash.jpg);
   background-attachment: fixed;

@@ -8,9 +8,8 @@ class Projets extends Component {
     render() {
         return (
             <section className="section3">
-                
+                <h2>Mes Réalisations</h2>
                 <article className="project">
-                   
                     {/*<div className="single">zandoo</div>
                     <div className="single">vod</div>
                     <div className="single">puissance 4</div>

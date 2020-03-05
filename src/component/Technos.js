@@ -3,8 +3,8 @@ import back from '../Fullstack/back';
 import front from '../Fullstack/front';
 import skills from '../Fullstack/skills';
 import './Technos.css'
-import Zoom from 'react-reveal/Zoom';
-import Bounce from 'react-reveal/Bounce';
+import Jump from 'react-reveal/Jump';
+import Flip from 'react-reveal/Flip';
 
 
 const Title = "Technos";
@@ -12,9 +12,9 @@ export class Technos extends Component {
     
     render() {
         return (
-            <div> 
+            <div className="wrap"> 
                 <section className="section2">
-                <Zoom left cascade>
+                <Jump left cascade>
                     <article className=" front stack ">
                         <h3>Technos Front-End</h3>{
                          front.map((item, i) => 
@@ -23,27 +23,27 @@ export class Technos extends Component {
                            </div>
                         )};
                     </article>
-                </Zoom>
-                <Bounce  right cascade>
-                    <article className="back stack">
-                        <h3>Technos Back-End</h3>{
-                            back.map((item, i) => 
-                              <div key={i}>
-                              <img src={`media/${item.img}`} alt={item.name} className="media"/>
-                              </div>
-                           )};
-                    </article>
-                </Bounce>    
-                <Zoom left cascade>
+                </Jump>
+                <Flip  right cascade>
                     <article className="front stack skills">
-                        <h3>Les Outils</h3>{
-                         skills.map((item, i) => 
-                           <div key={i}>
-                           <img src={`media/${item.img}`} alt={item.name} className="media"/>
-                           </div>
-                        )};
+                    <h3>Les Outils</h3>{
+                     skills.map((item, i) => 
+                        <div key={i}>
+                        <img src={`media/${item.img}`} alt={item.name} className="media"/>
+                        </div>
+                    )};
                     </article>
-                </Zoom>
+                </Flip>    
+                <Jump left cascade>
+                    <article className="back stack">
+                    <h3>Technos Back-End</h3>{
+                        back.map((item, i) => 
+                        <div key={i}>
+                        <img src={`media/${item.img}`} alt={item.name} className="media"/>
+                        </div>
+                    )};
+                    </article>
+                </Jump>
                 
                 </section>
             </div>

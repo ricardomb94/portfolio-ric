@@ -1,12 +1,9 @@
-
+/* 
 .section2{
     display: grid;
-    grid-template-columns: repeat(12, 1fr, 1fr, 1fr);
+    grid-template-columns: repeat(3, 1fr, 1fr, 1fr);
     grid-gap: 0.5em;
     grid-template-rows: 50rem;
-    /* width: 35rem; */
-    /* text-align: center;
-    align-content: center; */
 }
 .media{
     width:100%;
@@ -21,24 +18,15 @@
 .front{
     grid-column-start:1;
     grid-template-columns: repeat(4, 1fr);
-    align-self: center;
-    /* background: darkgoldenrod; */
-    /* width: 15rem; */
-    
+    align-self: center; 
 }
 .front >div{
     background: rgba(250, 248, 248, 0.4);
     padding: 1rem;
 }
-/* .front >div:nth-child(odd){
-  background: #eb232380; 
-    padding: 1rem;
-} */
-
 .item{
     padding: 1rem;
 }
-
 
 .back{
     grid-column-start: 3;
@@ -62,11 +50,53 @@
     grid-template-columns: repeat(4, 1fr);
     align-self: center;
     text-align: center;
-    /* grid-template-columns: repeat(6,1fr); */
-    /* width: 15rem; */
 }
-
+ */
+ 
 h3{
     color: white;
     
+}
+
+.wrap{
+    display: grid;
+    gap: 1rem;
+}
+.section2{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    'front back skills';
+}
+.front >div{
+    background: rgba(250, 248, 248, 0.4);
+    padding: 1rem;
+}
+.back >div{
+    background:rgba(250, 248, 248, 0.4);
+    padding: 0.3rem;
+}
+/* .back >div:nth-child(odd){
+    background: transparent;
+} */
+.front,.back{
+    background:#3262e680;
+}
+.skills{
+    background: hsla(0, 71%, 51%, 0.7);
+}
+.stack{
+    /* background:#3262e680; */
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    /* box-shadow:0 1px 5px rgba(104, 104, 104, 0.8); */
+    box-shadow: 10px 5px 5px grey;
+}
+.media{
+    max-width: 100%;
+}
+.item{
+    padding: 1rem;
 }

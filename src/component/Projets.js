@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import product from '../Fullstack/product';
 import './Projets.css';
-import { Image, Reveal, Item } from 'semantic-ui-react';
+import { Image, Reveal} from 'semantic-ui-react';
 import Zoom from 'react-reveal/Zoom';
 import Pulse from 'react-reveal/Pulse';
-import { idText } from 'typescript';
+// import { idText } from 'typescript';
 
 
 

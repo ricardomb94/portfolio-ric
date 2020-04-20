@@ -7,12 +7,14 @@ import Jump from 'react-reveal/Jump';
 import Flip from 'react-reveal/Flip';
 
 
+
 const Title = "Technos";
 export class Technos extends Component {
     
     render() {
         return (
             <div className="wrap"> 
+            <h2>MES STACKS DE PREDILECTION</h2>
                 <section className="section2">
                 <Jump left cascade>
                     <article className=" front stack ">

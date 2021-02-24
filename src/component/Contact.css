@@ -1,17 +1,28 @@
-/* .item-1{
-    background: rgb(89, 194, 57);
-    padding: 5rem;
+*{
+  box-sizing: border-box;
 }
-    
-.item-2{
-    background: rgb(57, 185, 194);
-    padding: 5rem;
-} */
-/* .item-5{
-    background: rgb(57, 185, 194);
-    padding: 5rem;
+body{
+  background: #92bde7;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
 }
-.item-6{
-    background: rgb(57, 185, 194);
-    padding: 5rem;
-} */
+.contact-container{
+  max-width: 106.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.brand{
+  color: white;
+}
+
+.contact-wrapper{
+  box-shadow: 0 0 20px 0 rgba(72, 92, 116, 0.7);
+}

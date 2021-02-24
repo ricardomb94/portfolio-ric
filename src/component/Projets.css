@@ -16,3 +16,8 @@
 .pic{
     width:100%;
 }
+.description{
+    background: black;
+    color: white;
+    padding: 0.875rem;
+}

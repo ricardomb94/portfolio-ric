@@ -1,15 +1,14 @@
-
-
-html body{
+html body {
    /* display: grid; */
    /* grid-template-columns: repeat(12, 1fr); */
-  background: url(/media/viggo-unsplash.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 3;
+   background: url(/media/viggo-unsplash.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 3;
 }
+
 /* #root{
    margin: 0 auto;
    background: aqua;
@@ -20,8 +19,8 @@ html body{
    width: 100%;  
    margin-top: 8rem;   
 } */
-h2{
-  font-size: 1em;
+h2 {
+   font-size: 1em;
    text-align: center;
-   font-family:'Courier New', Courier, monospace;
+   font-family: 'Courier New', Courier, monospace;
 }
